@@ -63,7 +63,7 @@ int main(int argc, char** argv)
     exitWindow = GuiWindowBox(Rectangle {0, 0, screenWidth, screenHeight},
                               "#198# CHARACTER COUNTER");
 
-    GuiTextBox(Rectangle {10, 40, 180, 20}, input, 1024, 1);
+    GuiTextBox(Rectangle {10, 40, 180, 20}, input, 1023, 1);
     GuiDrawText(TextFormat("Total Count: %zu", strlen(input)),
                 Rectangle {10, 60, 180, 20},
                 1,
